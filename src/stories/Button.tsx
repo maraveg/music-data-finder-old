@@ -1,5 +1,6 @@
 import React from 'react';
 import './button.css';
+import { ButtonLabel } from './Button.styles'
 
 interface ButtonProps {
   /**
@@ -42,7 +43,7 @@ export const Button = ({
       style={{ backgroundColor }}
       {...props}
     >
-      {label}
+      <ButtonLabel> {label} </ButtonLabel>
     </button>
   );
 };
